@@ -8,9 +8,14 @@
  */
 
 // ここでcatオブジェクトを作る
+const cat = {
+  name:'tama',
+  age:6,
+  sex:'オス'
+};
 
 // ここでconsole.logを使ってcatオブジェクトの内容を出力する
-
+console.log(cat);
 
 /**
  * 課題2: 課題1で作ったcatオブジェクトに次の情報を追加する
@@ -19,7 +24,8 @@
  */
 
 // ここでownerを追加するコードを書く
-
+cat.owner = 'tomoro';
+console.log(cat);
 // ここでconsole.logを使ってcatオブジェクトの内容を出力する
 
 
@@ -30,7 +36,8 @@
  */
 
 // ここでageを更新するコードを書く
-
+cat.age++;
+console.log(cat);
 // ここでconsole.logを使ってcatオブジェクトの内容を出力する
 
 
@@ -41,5 +48,6 @@
  */
 
 // ここでownerを削除するコードを書く
-
+delete cat.owner;
+console.log(cat);
 // ここでconsole.logを使ってcatオブジェクトの内容を出力する
